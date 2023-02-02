@@ -27,6 +27,45 @@ Author URL: http://w3layouts.com
             position: relative;
             z-index: 0;
         }
+        .gallery-products{
+        width: 80%;
+        border: 1px solid transparent;
+        margin: auto;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .gallery-products-div{
+        border: 1px solid transparent;
+        margin: auto;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+    .gallery-products-div-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .gallery-products-div-button button{
+        border-radius: 20px;
+        width: 130px;
+        background-color: #ff7800;
+        border: 1px solid darkgray;
+    }
+    .gallery-products-img{
+        width: 260px;
+        height: 200px;
+        border: 1px solid transparent;
+        margin: auto;
+    }
+    .gallery-products-img img{
+        width: 260px;
+        height: 200px;
+    }
+    .product-heading{
+        text-align: center;
+    }
     </style>
 </head>
 
@@ -177,7 +216,7 @@ Author URL: http://w3layouts.com
 
                     </div>
                     <div class="col-lg-6 w3hny-passion-item">
-                        <img src="assets/images/g9.jpg" alt="" class="img-fluid radius-image">
+                        <img src="assets/images/gallery-about.jpg" alt="" class="img-fluid radius-image">
                     </div>
                 </div>
 
@@ -187,7 +226,7 @@ Author URL: http://w3layouts.com
     <!--//w3-grids-->
 
     <!-- features section -->
-    <section class="w3l-features w3l-passion-mid-sec py-5" id="features">
+    <!-- <section class="w3l-features w3l-passion-mid-sec py-5" id="features">
         <div class="container py-lg-5 py-md-4 py-2">
             <div class="main-cont-wthree-2 align-items-center text-left">
                 <div class="row align-items-center">
@@ -231,8 +270,105 @@ Author URL: http://w3layouts.com
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--//features section -->
+    <div class="our-prducts" >
+        <h1 style="text-align: center; margin-bottom: 20px;">Our Products</h1>
+    </div>
+    <!-- Gallery Products -->
+    <div class="gallery-products">
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (6).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Elaichi</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (7).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Red Chillie</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (8).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Laung</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (9).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Mustard Seed</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (10).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Haldi Powder</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (2).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Corn</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (3).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Kaali Mirch</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (4).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Clove</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp (5).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Masale Powder/h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- Gallery Products -->
 
     <!--/w3l-services-->
     <section class="w3l-services py-5" id="services">
@@ -298,7 +434,7 @@ Author URL: http://w3layouts.com
                                 <ul class="social">
                                     <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
                                     </li>
-                                    <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a>
+                                    <!-- <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a> -->
                                     </li>
                                     <li><a href="#twitter"><span class="fab fa-twitter"></span></a>
                                     </li>
@@ -319,12 +455,16 @@ Author URL: http://w3layouts.com
                                 <li><a href="services.html">Services</a>
                                 </li>
 
-                                <li><a href="#blog">Blog</a>
+                                <!-- <li><a href="#blog">Blog</a> -->
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
+                                <!-- <li><a href="">Terms & Conditions</a></li> -->
                             </ul>
                         </div>
-                        <div class="col-lg-2 sub-two-right">
+                        <div class="bwt-logo" style="width: 400px; height: 100px; border: 1px solid transparent; margin-left: 150px; margin-top: 50px;">
+                            <img src="./assets/images/bwt-white.png" alt="" style="width: 350px; height: 100px;">
+                        </div>
+                        <!-- <div class="col-lg-2 sub-two-right">
                             <h6>Company</h6>
                             <ul>
 
@@ -341,8 +481,8 @@ Author URL: http://w3layouts.com
 
 
                             </ul>
-                        </div>
-                        <div class="col-lg-4 sub-one-left">
+                        </div> -->
+                        <!-- <div class="col-lg-4 sub-one-left">
                             <h6>Twitter Feed</h6>
                             <ul>
                                 <li class="w3tweet-holder-grids">
@@ -361,19 +501,19 @@ Author URL: http://w3layouts.com
                                 </li>
 
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="below-section mt-5">
                     <div class="copyright-footer">
                         <div class="columns text-left">
-                            <p>© 2021 Construe. All rights reserved | Designed by <a href="https://w3layouts.com" target="_blank">W3layouts</a>
+                            <p>ABC Company
                             </p>
                         </div>
                         <ul class="footer-w3list text-right">
-                            <li><a href="#url">Privacy Policy</a>
+                            <li><a href="">Privacy Policy</a>
                             </li>
-                            <li><a href="#url">Terms &amp; Conditions</a>
+                            <li><a href="">Terms &amp; Conditions</a>
                             </li>
                         </ul>
                     </div>
