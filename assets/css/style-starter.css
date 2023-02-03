@@ -19295,7 +19295,7 @@ ul.gallery_agile li {
 /*--//gallery--*/
 /*--/video--*/
 .w3l-index5 {
-    /* background: url(../images/banner3.jpg) no-repeat center; */
+    background: url(../images/index-image.jpg) no-repeat center;
     -ms-background-size: cover;
     background-size: cover;
     z-index: 0;
