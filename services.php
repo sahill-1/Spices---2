@@ -16,7 +16,17 @@ Author URL: http://w3layouts.com
     <!--/Template-CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <!--//Template-CSS -->
+    <?php include 'modal.php'; ?> 
     <style>
+        .goog-logo-link {
+        	display: none !important;
+    	}
+    	.goog-te-gadget {
+    		color: transparent !important;
+    	}
+        .language{
+            margin-top: 9px;
+        }
         .inner-banner {
             background: url("./assets/images/gallery-banner.jpg") no-repeat center;
             background-size: cover;
@@ -65,6 +75,9 @@ Author URL: http://w3layouts.com
     }
     .product-heading{
         text-align: center;
+    }
+    .Enquiry-btn:hover{
+        color: white;
     }
     @media(max-width: 704px){
             .bwt-logo img{
@@ -131,7 +144,7 @@ Author URL: http://w3layouts.com
     <header id="site-header" class="">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.php">
                         Construe
                     </a></h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,18 +154,18 @@ Author URL: http://w3layouts.com
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-lg-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="services.html">Products</a>
+                            <a class="nav-link active" href="services.php">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
-
+                        <div class="language"><a id="google_translate_element"></a></div>
                     </ul>
                     <!--/search-right-->
                     <!-- <ul class="header-search mx-lg-4">
@@ -214,7 +227,8 @@ Author URL: http://w3layouts.com
                         </div>
                         <p class="mt-3 pe-lg-5">At Organic Spices, we strive to offer you the best in organic ingredients. We use only certified organic herbs and spices that are free from harmful pesticides, artificial additives, or any other questionable substances. So you can enjoy your cooking with peace of mind!</p>
                         <div class="w3banner-content-btns">
-                            <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a>
+                            <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe mfp-iframe-btn btn btn-style btn-primary mt-lg-5 mt-4 me-2 " data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+                            <!-- <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a> -->
                             <a href="contact.html" class="btn btn-style btn-outline-dark mt-lg-5 mt-4">Contact Us </a>
                         </div>
 
@@ -364,7 +378,7 @@ Author URL: http://w3layouts.com
             <div class="gallery-products-img">
                 <img src="./assets/images/gp (5).jpg" alt="">
             </div>
-            <h5 class="product-heading">Masale Powder/h5>
+            <h5 class="product-heading">Masale Powder </h5>
             <div class="gallery-products-div-button">
                 <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
 
@@ -433,7 +447,7 @@ Author URL: http://w3layouts.com
                     <div class="row footer-hny-grids sub-columns">
                         <div class="col-lg-4 sub-one-left pe-lg-5">
                             <h6>About </h6>
-                            <p class="footer-phny pe-lg-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.Lorem ipsum dolor sit,l.Lorem ipsum dolor sit, amet consectetur elit. </p>
+                            <p class="footer-phny pe-lg-3">Organic Spices makes it easy to get access to premium quality spices all in one place. Our online store provides convenient shopping with fast delivery so you can get the exact flavor you’re looking for at any time!</p>
                             <div class="columns-2 mt-lg-5 mt-4">
                                 <ul class="social">
                                     <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
@@ -601,6 +615,231 @@ Author URL: http://w3layouts.com
     <!-- //disable body scroll which navbar is in active -->
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- ENQUIRY NOW/LANGUAGE CONVERTER
+============================================ -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript">
+    (function () {
+        var gtConstEvalStartTime = new Date();
+        /*
+      
+         Copyright The Closure Library Authors.
+         SPDX-License-Identifier: Apache-2.0
+        */
+        var h = this || self,
+            l = /^[\w+/_-]+[=]{0,2}$/,
+            m = null;
+
+        function n(a) {
+            return (a = a.querySelector && a.querySelector("script[nonce]")) && (a = a.nonce || a.getAttribute("nonce")) && l.test(a) ? a : ""
+        }
+
+        function p(a, b) {
+            function c() { }
+            c.prototype = b.prototype;
+            a.i = b.prototype;
+            a.prototype = new c;
+            a.prototype.constructor = a;
+            a.h = function (g, f, k) {
+                for (var e = Array(arguments.length - 2), d = 2; d < arguments.length; d++) e[d - 2] = arguments[d];
+                return b.prototype[f].apply(g, e)
+            }
+        }
+
+        function q(a) {
+            return a
+        };
+
+        function r(a) {
+            if (Error.captureStackTrace) Error.captureStackTrace(this, r);
+            else {
+                var b = Error().stack;
+                b && (this.stack = b)
+            }
+            a && (this.message = String(a))
+        }
+        p(r, Error);
+        r.prototype.name = "CustomError";
+
+        function u(a, b) {
+            a = a.split("%s");
+            for (var c = "", g = a.length - 1, f = 0; f < g; f++) c += a[f] + (f < b.length ? b[f] : "%s");
+            r.call(this, c + a[g])
+        }
+        p(u, r);
+  
+        u.prototype.name = "AssertionError";
+
+        function v(a, b) {
+            throw new u("Failure" + (a ? ": " + a : ""), Array.prototype.slice.call(arguments, 1));
+        };
+        var w;
+
+        function x(a, b) {
+            this.g = b === y ? a : ""
+        }
+        x.prototype.toString = function () {
+            return this.g + ""
+        };
+        var y = {};
+
+        function z(a) {
+            var b = document.getElementsByTagName("head")[0];
+            b || (b = document.body.parentNode.appendChild(document.createElement("head")));
+            b.appendChild(a)
+        }
+
+        function _loadJs(a) {
+            var b = document;
+            var c = "SCRIPT";
+            "application/xhtml+xml" === b.contentType && (c = c.toLowerCase());
+            c = b.createElement(c);
+            c.type = "text/javascript";
+            c.charset = "UTF-8";
+            if (void 0 === w) {
+                b = null;
+                var g = h.trustedTypes;
+                if (g && g.createPolicy) {
+                    try {
+                        b = g.createPolicy("goog#html", {
+                            createHTML: q,
+                            createScript: q,
+                            createScriptURL: q
+                        })
+                    } catch (t) {
+                        h.console && h.console.error(t.message)
+                    }
+                    w = b
+                } else w = b
+            }
+            a = (b = w) ? b.createScriptURL(a) : a;
+            a = new x(a, y);
+            a: {
+                try {
+                    var f = c && c.ownerDocument,
+                        k = f && (f.defaultView || f.parentWindow);
+                    k = k || h;
+                    if (k.Element && k.Location) {
+                        var e = k;
+                        break a
+                    }
+                } catch (t) { }
+                e = null
+            }
+            if (e && "undefined" != typeof e.HTMLScriptElement && (!c || !(c instanceof e.HTMLScriptElement) && (c instanceof e.Location || c instanceof e.Element))) {
+                e = typeof c;
+                if ("object" == e && null != c || "function" == e) try {
+                    var d = c.constructor.displayName || c.constructor.name || Object.prototype.toString.call(c)
+                } catch (t) {
+                    d = "<object could not be stringified>"
+                } else d = void 0 === c ? "undefined" : null === c ? "null" : typeof c;
+                v("Argument is not a %s (or a non-Element, non-Location mock); got: %s",
+                    "HTMLScriptElement", d)
+            }
+            a instanceof x && a.constructor === x ? d = a.g : (d = typeof a, v("expected object of type TrustedResourceUrl, got '" + a + "' of type " + ("object" != d ? d : a ? Array.isArray(a) ? "array" : d : "null")), d = "type_error:TrustedResourceUrl");
+            c.src = d;
+            (d = c.ownerDocument && c.ownerDocument.defaultView) && d != h ? d = n(d.document) : (null === m && (m = n(h.document)), d = m);
+            d && c.setAttribute("nonce", d);
+            z(c)
+        }
+
+        function _loadCss(a) {
+            var b = document.createElement("link");
+            b.type = "text/css";
+            b.rel = "stylesheet";
+            b.charset = "UTF-8";
+            b.href = a;
+            z(b)
+        }
+
+        function _isNS(a) {
+            a = a.split(".");
+            for (var b = window, c = 0; c < a.length; ++c)
+                if (!(b = b[a[c]])) return !1;
+            return !0
+        }
+
+        function _setupNS(a) {
+            a = a.split(".");
+            for (var b = window, c = 0; c < a.length; ++c) b.hasOwnProperty ? b.hasOwnProperty(a[c]) ? b = b[a[c]] : b = b[a[c]] = {} : b = b[a[c]] || (b[a[c]] = {});
+            return b
+        }
+        window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener("DOMContentLoaded", function () {
+            document.readyState = "complete"
+        }, !1);
+        if (_isNS('google.translate.Element')) {
+            return
+        } (function () {
+            var c = _setupNS('google.translate._const');
+            c._cest = gtConstEvalStartTime;
+            gtConstEvalStartTime = undefined;
+            c._cl = 'en';
+            c._cuc = 'googleTranslateElementInit';
+            c._cac = '';
+            c._cam = '';
+            c._ctkk = '449532.3786053938';
+            var h = 'translate.googleapis.com';
+            var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
+            var b = s + h;
+            c._pah = h;
+            c._pas = s;
+            c._pbi = b + '/translate_static/img/te_bk.gif';
+            c._pci = b + '/translate_static/img/te_ctrl3.gif';
+            c._pli = b + '/translate_static/img/loading.gif';
+            c._plla = h + '/translate_a/l';
+            c._pmi = b + '/translate_static/img/mini_google.png';
+            c._ps = b + '/translate_static/css/translateelement.css';
+            c._puh = 'translate.google.com';
+            _loadCss(c._ps);
+            _loadJs(b + '/translate_static/js/element/main.js');
+        })();
+    })();
+</script>
+<!-- End Language Converter -->
+<!-- Including Jquery -->
+<script src="assets/js/vendor/jquery-min.js"></script>
+<script src="assets/js/vendor/js.cookie.js"></script>
+<!--Including Javascript-->
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<!--Newsletter Popup Cookies-->
+<script>
+    function newsletter_popup() {
+        var cookieSignup = "cookieSignup", date = new Date();
+        if ($.cookie(cookieSignup) != 'true' && window.location.href.indexOf("challenge#newsletter-modal") <= -1) {
+            setTimeout(function () {
+                $.magnificPopup.open({
+                    items: {
+                        src: '#newsletter-modal'
+                    }
+                    , type: 'inline', removalDelay: 300, mainClass: 'mfp-zoom-in'
+                }
+                );
+            }
+                , 5000);
+        }
+        $.magnificPopup.instance.close = function () {
+            if ($("#dontshow").prop("checked") == true) {
+                $.cookie(cookieSignup, 'true', {
+                    expires: 1, path: '/'
+                }
+                );
+            }
+            $.magnificPopup.proto.close.call(this);
+        }
+    }
+    newsletter_popup();
+</script>
 
 </body>
 
