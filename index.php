@@ -43,7 +43,7 @@
                         <li class="info-grid">
                             <div class="info-icon"><span class="far fa-envelope"></span></div>
                             <div class="info-text" style="display: flex; align-items: center;">
-                                <p>abcd@gmail.com</p>
+                                <p style="text-transform: lowercase;">banambarfoods@gmail.com</p>
                                 <!-- <p>Saturday and Sunday - CLOSED</p> -->
                             </div>
 
@@ -51,7 +51,7 @@
                         <li class="info-grid">
                             <div class="info-icon"><span class="fas fa-phone-alt"></span></div>
                             <div class="info-text" style="display: flex; align-items: center;">
-                                <p><a href="" >+1(21) 234 557 4567</a></p>
+                                <p><a href="" >+91-7608913489</a></p>
                                 <!-- <p><a href="tel:+1(21) 234 4568">+1(21) 234 557 45678</a></p> -->
                             </div>
 
@@ -59,8 +59,8 @@
                         <li class="info-grid">
                             <div class="info-icon"><span class="fas fa-map-marker-alt"></span></div>
                             <div class="info-text">
-                                <p>34th Avenue</p>
-                                <p>New York, S2 Honey Block</p>
+                                <p>Nagamathalen</p>
+                                <p>Puri, Odisa-752001</p>
 
                             </div>
 
@@ -89,7 +89,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
                 <h1><a class="navbar-brand pe-xl-5 pe-lg-4" href="index.php">
-                        Construe
+                        BanambarFoods
                     </a></h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
@@ -622,7 +622,7 @@
                 <div class="below-section mt-5">
                     <div class="copyright-footer">
                         <div class="columns text-left">
-                            <p>ABC Company
+                            <p>Banambar Foods
                             </p>
                         </div>
                         <ul class="footer-w3list text-right">
